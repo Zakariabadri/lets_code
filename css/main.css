@@ -40,6 +40,11 @@ header .logo img{
 header nav{
     float: right;
 }
+header nav .nav-btn{
+    display: none;
+}
+
+
 
 header nav .list-item{
     display: inline-block;
@@ -68,11 +73,21 @@ header nav .list-item span.icon{
     header nav:not(.active) .nav-list .list-item{
         right: -200px;
     }
+
+    header nav .nav-btn{
+    display: block;
+    }
+    header nav:not(.active) .nav-btn{
+        background: transparent;
+    }
     header nav .nav-btn{
         width: 40px;
         background: none;
         border: none;
-        margin-top: 16px;
+        margin-top: 9px;
+        background-color: grey;
+        padding: 8px 7px;
+        border-radius: 3px;
     }
 
     header nav .nav-list{
@@ -104,6 +119,7 @@ header nav .list-item span.icon{
 
         padding: 15px;
         display: block;
+        border-right: 4px solid black;
 
     }
 
