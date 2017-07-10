@@ -1,6 +1,10 @@
+html,body{
+
+  height: 100%;
+
+}
+
 body{
-    background-image: url(../images/bg-dark.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
 }
@@ -12,7 +16,15 @@ button:focus{
 
 header{
     padding: 20px 0;
-    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header.sticky{
+  background-color: #fff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 header .logo{
@@ -37,6 +49,10 @@ header .logo img{
     left: 0;
 }
 
+header.sticky .logo img{
+    top: -100%;
+}
+
 header nav{
     float: right;
 }
@@ -50,6 +66,10 @@ header nav .list-item{
     display: inline-block;
     color: #fff;
     margin-left: 40px;
+}
+
+header.sticky nav .list-item{
+  color: black;
 }
 
 header nav .list-item:first-child{
@@ -136,6 +156,10 @@ header nav .list-item span.icon{
         margin-bottom: 6px;
     }
 
+    header.sticky nav .nav-btn .btn-line{
+        background-color: black;
+    }
+
     header nav .nav-btn .btn-line:last-child{
         margin-bottom: 0;
     }
@@ -143,5 +167,15 @@ header nav .list-item span.icon{
 }
 
 
+/************* SECTIONS *************/
 
+.section{
+  height: 100%;
+}
 
+/*Main Section*/
+
+.main-section{
+  background-image: url(../images/bg-dark.jpg);
+  background-size: cover;
+}

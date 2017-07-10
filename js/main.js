@@ -15,8 +15,18 @@ $(document).ready(function(){
 
     	}
 
-    	
-        
+
+
+    });
+    var $mainSection = $('.main-section');
+    $(window).scroll(function(){
+
+      if($(window).scrollTop() >= $mainSection.height() - 100){
+        $('header').addClass('sticky');
+      }else{
+        $('header').removeClass('sticky');
+      }
+
     });
 
 });
