@@ -89,6 +89,43 @@ header nav .list-item span.icon{
     vertical-align: middle;
 }
 
+@media (min-width: 768px){
+
+    header nav .nav-list .list-item{
+      position: relative;
+    }
+    header.sticky nav .nav-list .list-item:before{
+      background: black;
+    }
+    header nav .nav-list .list-item:before{
+      content: '';
+      background-color: #FFF;
+      display: block;
+      position: absolute;
+      height: 3px;
+      right: 0;
+      left: 0;
+      bottom: -8px;
+      width: 0;
+      transition: width .4s;
+    }
+    header nav .nav-list .list-item:hover:before{
+
+      width: 100%;
+
+    }
+    header nav .nav-list .list-item .icon{
+      position: relative;
+      right: Opx;
+      transition: .4s;
+    }
+    header nav .nav-list .list-item:hover .icon{
+
+      right: -5px;
+
+    }
+}
+
 @media(max-width: 767px){
     header nav:not(.active) .nav-list .list-item{
         right: -200px;

@@ -15,9 +15,16 @@ $(document).ready(function(){
 
     	}
 
-
-
     });
+
+    $(window).on('click', function(e){
+
+      var clickover = $(e.target);
+      if(!clickover.closest('header').length && $('nav').hasClass('active')){
+        $('nav').removeClass('active');
+      }
+    });
+
     var $mainSection = $('.main-section');
     $(window).scroll(function(){
 
