@@ -9,6 +9,10 @@ body{
     overflow-x: hidden;
 }
 
+.playfair{
+  font-family: 'Playfair Display', serif;
+}
+
 button:focus{
     outline: none;
 }
@@ -217,4 +221,22 @@ header nav .list-item span.icon{
 .main-section{
   background-image: url(../images/bg-dark.jpg);
   background-size: cover;
+}
+
+.main-section .title{
+  font-size: 45px;
+  color: #fff;
+  text-align: right;
+  line-height: 0.8;
+}
+.main-section .title .small{
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  letter-spacing: 7px;
+  margin-bottom: 35px;
+}
+
+.main-section .row{
+  margin-top: 180px;
 }
